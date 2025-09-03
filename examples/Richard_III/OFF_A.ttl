@@ -1,0 +1,107 @@
+EasyRdf
+Documentation
+Examples
+Converter
+Support
+Downloads
+Converter
+Input Data:
+<http://id.loc.gov/vocabulary/relators/drt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://id.loc.gov/vocabulary/relators/drt> <http://www.w3.org/2000/01/rdf-schema#label> "director" .
+<http://vocab.getty.edu/aat/300388306> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E56_Language> .
+<http://vocab.getty.edu/aat/300404670> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://vocab.getty.edu/aat/300404670> <http://www.w3.org/2000/01/rdf-schema#label> "Title" .
+<http://vocab.getty.edu/page/aat/300404387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<http://vocab.getty.edu/page/aat/300404387> <http://www.w3.org/2000/01/rdf-schema#label> "Creating" .
+<https://data.stage.org/auth/000000000001> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://id.loc.gov/vocabulary/relators/drt> .
+<https://data.stage.org/auth/000000000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E21_Person> .
+<https://data.stage.org/auth/000000000001> <http://www.w3.org/2000/01/rdf-schema#label> "William Mesguish" .
+<https://data.stage.org/text/000000000101> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E33_Linguistic_Object> .
+<https://data.stage.org/text/000000000101> <http://www.w3.org/2000/01/rdf-schema#label> "Shakespeare Richard III" .
+<https://data.stage.org/works/000000000001> <http://www.cidoc-crm.org/cidoc-crm/P108i_was_produced_by> _:b0 .
+<https://data.stage.org/works/000000000001> <http://www.cidoc-crm.org/cidoc-crm/P1_is_identified_by> _:b3 .
+<https://data.stage.org/works/000000000001> <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <https://vocab.getty.edu/aat/300387357> .
+<https://data.stage.org/works/000000000001> <http://www.cidoc-crm.org/cidoc-crm/P72_has_language> <http://vocab.getty.edu/aat/300388306> .
+<https://data.stage.org/works/000000000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E89_Propositional_Object> .
+<https://data.stage.org/works/000000000001> <http://www.w3.org/2000/01/rdf-schema#label> "The show of Richard III as conceived by William Mesguish" .
+<https://vocab.getty.edu/aat/300387357> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E55_Type> .
+<https://vocab.getty.edu/aat/300387357> <http://www.w3.org/2000/01/rdf-schema#label> "works (general, creative)" .
+_:b0 <http://www.cidoc-crm.org/cidoc-crm/P15_was_influenced_by> <https://data.stage.org/text/000000000101> .
+_:b0 <http://www.cidoc-crm.org/cidoc-crm/P4_has_time-span> _:b1 .
+_:b0 <http://www.cidoc-crm.org/cidoc-crm/P9_consists_of> _:b2 .
+_:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E12_Production> .
+_:b1 <http://www.cidoc-crm.org/cidoc-crm/P82a_begin_of_the_begin> "2024-01-01T00:00:00Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E52_Time-Span> .
+_:b1 <http://www.w3.org/2000/01/rdf-schema#label> "2024" .
+_:b2 <http://www.cidoc-crm.org/cidoc-crm/P14_carried_out_by> <https://data.stage.org/auth/000000000001> .
+_:b2 <http://www.cidoc-crm.org/cidoc-crm/P32_used_general_technique> <http://vocab.getty.edu/page/aat/300404387> .
+_:b2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E12_Production> .
+_:b3 <http://www.cidoc-crm.org/cidoc-crm/P190_has_symbolic_content> "Richard III" .
+_:b3 <http://www.cidoc-crm.org/cidoc-crm/P2_has_type> <http://vocab.getty.edu/aat/300404670> .
+_:b3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.cidoc-crm.org/cidoc-crm/E33_E41_Linguistic_Appellation> .
+
+or URI:
+http://njh.me/
+(This URI is also used as the Base URI, when text is put in the input data box)
+Input Format:
+N-Triples
+Output Format:
+Turtle Terse RDF Triple Language
+Raw output
+ 
+Output
+Number of triples parsed: 33
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix ns0: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.loc.gov/vocabulary/relators/drt>
+  a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+  rdfs:label "director" .
+
+<http://vocab.getty.edu/aat/300388306> a <http://www.cidoc-crm.org/cidoc-crm/E56_Language> .
+<http://vocab.getty.edu/aat/300404670>
+  a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+  rdfs:label "Title" .
+
+<http://vocab.getty.edu/page/aat/300404387>
+  a <http://www.cidoc-crm.org/cidoc-crm/E55_Type> ;
+  rdfs:label "Creating" .
+
+<https://data.stage.org/auth/000000000001>
+  ns0:P2_has_type <http://id.loc.gov/vocabulary/relators/drt> ;
+  a ns0:E21_Person ;
+  rdfs:label "William Mesguish" .
+
+<https://data.stage.org/text/000000000101>
+  a ns0:E33_Linguistic_Object ;
+  rdfs:label "Shakespeare Richard III" .
+
+<https://data.stage.org/works/000000000001>
+  ns0:P108i_was_produced_by [
+    ns0:P15_was_influenced_by <https://data.stage.org/text/000000000101> ;
+    ns0:P4_has_time-span [
+      ns0:P82a_begin_of_the_begin "2024-01-01T00:00:00Z"^^xsd:dateTime ;
+      a ns0:E52_Time-Span ;
+      rdfs:label "2024"
+    ] ;
+    ns0:P9_consists_of [
+      ns0:P14_carried_out_by <https://data.stage.org/auth/000000000001> ;
+      ns0:P32_used_general_technique <http://vocab.getty.edu/page/aat/300404387> ;
+      a ns0:E12_Production
+    ] ;
+    a ns0:E12_Production
+  ] ;
+  ns0:P1_is_identified_by [
+    ns0:P190_has_symbolic_content "Richard III" ;
+    ns0:P2_has_type <http://vocab.getty.edu/aat/300404670> ;
+    a ns0:E33_E41_Linguistic_Appellation
+  ] ;
+  ns0:P2_has_type <https://vocab.getty.edu/aat/300387357> ;
+  ns0:P72_has_language <http://vocab.getty.edu/aat/300388306> ;
+  a ns0:E89_Propositional_Object ;
+  rdfs:label "The show of Richard III as conceived by William Mesguish" .
+
+<https://vocab.getty.edu/aat/300387357>
+  a ns0:E55_Type ;
+  rdfs:label "works (general, creative)" .
